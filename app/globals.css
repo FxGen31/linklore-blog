@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 97%;
+        --foreground: 221 39.3% 11%;
+
+        --subdued: 0 0% 100%;
+        --subdued-foreground: 215 25% 26.7%;
+
+        --muted: 211 40.5% 96%;
+        --muted-foreground: 222 9% 46%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 47.4% 11.2%;
+
+        --border: 220 13% 91%;
+        --input: 214.3 31.8% 86.4%;
+
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 47.4% 11.2%;
+
+        --primary: 246 57% 49.9%;
+        --primary-foreground: 226 100% 96.7%;
+
+        --secondary: 176 79.9% 38.4%;
+        --secondary-foreground: 166 76.5% 96.7%;
+
+        --accent: 221 14.5% 96%;
+        --accent-foreground: 220 9% 46%;
+
+        --destructive: 0 100% 50%;
+        --destructive-foreground: 210 40% 98%;
+
+        --ring: 215 20.2% 65.1%;
+
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 220 27% 15%;
+        --foreground: 220 13% 91%;
+
+        --subdued: 223 47% 11%;
+        --subdued-foreground: 215 20.2% 65.1%;
+
+        --muted: 223 47% 11%;
+        --muted-foreground: 218 10.6% 64.9%;
+
+        --accent: 215 27.9% 16.9%;
+        --accent-foreground: 240 5.9% 90%;
+
+        --popover: 224 71% 4%;
+        --popover-foreground: 215 20.2% 65.1%;
+
+        --border: 217 19.1% 26.7%;
+        --input: 216 34% 27%;
+
+        --card: 222 47% 11%;
+        --card-foreground: 213 31% 91%;
+
+        --primary: 241 78.4% 59.9%;
+        --primary-foreground: 226 100% 96.7%;
+
+        --secondary: 171 64% 54.2%;
+        --secondary-foreground: 166 76.5% 96.7%;
+
+        --destructive: 0 63% 31%;
+        --destructive-foreground: 210 40% 98%;
+
+        --ring: 216 34% 17%;
+
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground text-base;
+        font-feature-settings: 'rlig' 1, 'calt' 1;
+    }
+}
+
+@layer components {
+    [data-theme='dark'] {
+        @apply hidden;
+    }
+
+    .dark [data-theme='dark'] {
+        @apply block;
+    }
+
+    .dark [data-theme='light'] {
+        @apply hidden;
+    }
+
+    [data-theme='light'] {
+        @apply block;
+    }
+}
