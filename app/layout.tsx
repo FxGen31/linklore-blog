@@ -9,62 +9,62 @@ import type { Metadata } from 'next';
 
 // Primary font family
 const poppins = Poppins({
-    subsets: ['latin'],
-    display: 'swap',
-    weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 // Font family used for logo only
 const bangers = Bangers({
-    subsets: ['latin'],
-    display: 'swap',
-    weight: '400',
-    variable: '--font-bangers',
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-bangers',
 });
 
 // Font family used for logo only
 const mansalva = Mansalva({
-    subsets: ['latin'],
-    display: 'swap',
-    weight: '400',
-    variable: '--font-mansalva',
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-mansalva',
 });
 
 export const metadata: Metadata = {
-    title: siteConfig.metaData.title,
-    description: siteConfig.metaData.description,
+  title: siteConfig.metaData.title,
+  description: siteConfig.metaData.description,
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        // Hide hydration warning
-        <html lang='en' suppressHydrationWarning>
-            <body
-                className={cn(
-                    bangers.variable,
-                    mansalva.variable,
-                    poppins.className,
-                    'antialiased min-h-screen'
-                )}
-            >
-                {/* Provide dark mode support */}
-                <ThemeProvider
-                    attribute='class'
-                    defaultTheme='dark'
-                    enableSystem
-                    disableTransitionOnChange
-                >
-                    <div className='relative flex min-h-screen flex-col'>
-                        <SiteHeader />
-                        <div className='flex-1'>{children}</div>
-                        <SiteFooter />
-                    </div>
-                </ThemeProvider>
-            </body>
-        </html>
-    );
+  return (
+    // Hide hydration warning
+    <html lang='en' suppressHydrationWarning>
+      <body
+        className={cn(
+          bangers.variable,
+          mansalva.variable,
+          poppins.className,
+          'min-h-screen antialiased'
+        )}
+      >
+        {/* Provide dark mode support */}
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='dark'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className='relative flex min-h-screen flex-col'>
+            <SiteHeader />
+            <div className='flex-1'>{children}</div>
+            <SiteFooter />
+          </div>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }

@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://via.placeholder.com/64" alt="linklore blog logo" width="64" height="64" />
   <h1 align="center">Linklore Blog</h1>
-  <p align="center">A personal blog built with Next.js, Contentlayer, and Tailwind CSS.</p>
+  <p align="center">A personal blog built with Next.js, Contentlayer, and shadcn/ui.</p>
   
   Demo: [http:localhost:3000](http:localhost:3000)
   
@@ -14,6 +14,7 @@
 
 ## Table of contents
 
+- [Table of contents](#table-of-contents)
 - [Getting Started](#getting-started)
 - [Technologies](#technologies)
 - [Project Structure](#project-structure)
@@ -87,13 +88,13 @@ linklore-blog
 
 ## Customization
 
--   `configs/site-config.ts` - Contains site metadata and author information. (**Modify to your need**)
--   `configs/projects-config.ts` - Contains placeholder details for portfolio projects. (**Modify to your need**)
--   `configs/nav-config.ts` - Contains all the navigation links in the site navbar.
--   `config/keyword-colors-config.ts` - Contains a mapping of keywords to their respective badge colors.
--   `app/global.css` - Configures Tailwind CSS theme colors and global styles.
--   `tailwind.config.ts` - Configures Tailwind CSS styles and plugins.
--   `posts/*.mdx` - Contains a collection of dummy posts. (**Replace with your actual data**)
+- `configs/site-config.ts` - Contains site metadata and author information. (**Modify to your need**)
+- `configs/projects-config.ts` - Contains placeholder details for portfolio projects. (**Modify to your need**)
+- `configs/nav-config.ts` - Contains all the navigation links in the site navbar.
+- `config/keyword-colors-config.ts` - Contains a mapping of keywords to their respective badge colors.
+- `app/global.css` - Configures Tailwind CSS theme colors and global styles.
+- `tailwind.config.ts` - Configures Tailwind CSS styles and plugins.
+- `posts/*.mdx` - Contains a collection of dummy posts. (**Replace with your actual data**)
 
 ## Deploy
 
