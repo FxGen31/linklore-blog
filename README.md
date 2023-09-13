@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="https://via.placeholder.com/64" alt="linklore blog logo" width="64" height="64" />
+  <img src="https://res.cloudinary.com/dv9jybv7h/image/upload/v1694510988/logo_ufckbh.png" alt="linklore blog logo" width="72" height="72" />
   <h1 align="center">Linklore Blog</h1>
   <p align="center">A personal blog built with Next.js, Contentlayer, and shadcn/ui.</p>
   
-  Demo: [http:localhost:3000](http:localhost:3000)
+  Demo: [https://linklore-blog.vercel.app](https://linklore-blog.vercel.app)
   
   <details>
     <summary>Screenshots</summary>
-    <img src="https://via.placeholder.com/256" alt="light mode" width="256" height="256"/>
-    <img src="https://via.placeholder.com/256" alt="dark mode" width="256" height="256"/>
+    <img src="https://res.cloudinary.com/dv9jybv7h/image/upload/v1694568347/blog-dark-theme_bvi11z.png" alt="dark theme blog"/>
+    <img src="https://res.cloudinary.com/dv9jybv7h/image/upload/v1694568350/blog-light-theme_mnqjav.png" alt="light theme blog"/>
   </details>
 </p>
 
