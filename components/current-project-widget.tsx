@@ -33,6 +33,7 @@ export default function CurrentProjectWidget({
           </p>
         </div>
         <a
+          aria-label='link to project github'
           href={currentProject.links.gitHub}
           target='_blank'
           rel='noopener noreferrer'

@@ -18,6 +18,7 @@ export default function BylineMetadata({
     <div className={cn(className, 'space-y-3 text-sm')} {...props}>
       <div className='inline-flex flex-wrap items-center'>
         <a
+          aria-label='link to author github profile'
           className='flex items-center space-x-2'
           href={siteConfig.links.gitHub}
           target='_blank'

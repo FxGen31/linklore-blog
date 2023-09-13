@@ -19,6 +19,7 @@ export default function SiteFooter({
         <p className='text-center text-sm leading-loose text-muted-foreground md:text-left'>
           The source code is available on{' '}
           <a
+            aria-label='link to project source code'
             href={siteConfig.links.gitHub}
             target='_blank'
             rel='noopener noreferrer'

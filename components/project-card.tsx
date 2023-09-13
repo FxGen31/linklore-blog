@@ -48,6 +48,7 @@ export default function ProjectCard({
         <div className='mt-2 flex items-center justify-start gap-2'>
           {project.links.gitHub && (
             <a
+              aria-label='link to project github'
               href={project.links.gitHub}
               rel='noopener noreferrer'
               target='_blank'
@@ -62,6 +63,7 @@ export default function ProjectCard({
           )}
           {project.links.demo && (
             <a
+              aria-label='link to project demo'
               href={project.links.demo}
               rel='noopener noreferrer'
               target='_blank'

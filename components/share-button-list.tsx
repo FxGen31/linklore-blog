@@ -20,20 +20,30 @@ export default function ShareButtonList({
   return (
     <div className={cn(className, 'flex flex-wrap space-x-2')} {...props}>
       <a
+        aria-label='share post to LinkedIn'
         href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`}
         rel='noopener noreferrer'
         target='_blank'
       >
-        <Button size='icon' className='h-8 w-8 bg-[#0077b5] hover:bg-[#0077b5]'>
+        <Button
+          aria-label='share post to LinkedIn button'
+          size='icon'
+          className='h-8 w-8 bg-[#0077b5] hover:bg-[#0077b5]'
+        >
           <LinkedInLogoIcon className='h-4 w-4' />
         </Button>
       </a>
       <a
+        aria-label='share post to Twitter'
         href={`http://www.twitter.com/share?url=${shareUrl}`}
         rel='noopener noreferrer'
         target='_blank'
       >
-        <Button size='icon' className='h-8 w-8 bg-[#1da1f2] hover:bg-[#1da1f2]'>
+        <Button
+          aria-label='share post to Twitter button'
+          size='icon'
+          className='h-8 w-8 bg-[#1da1f2] hover:bg-[#1da1f2]'
+        >
           <TwitterLogoIcon className='h-4 w-4' />
         </Button>
       </a>
