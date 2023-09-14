@@ -33,7 +33,7 @@ export default function RegularPostCard({
     >
       <div className='relative me-3 hidden h-24 w-24 flex-shrink-0 overflow-hidden rounded-2xl sm:me-5 sm:block sm:h-full sm:w-40'>
         <Image
-          sizes='(max-width: 600px) 180px, 400px'
+          sizes='(max-width: 768px) 256px, 384px'
           className='aspect-square h-full w-full object-cover'
           fill
           src={post.coverImage}

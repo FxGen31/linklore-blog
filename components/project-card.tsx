@@ -80,7 +80,7 @@ export default function ProjectCard({
       </div>
       <div className='relative ms-3 hidden h-24 w-24 flex-shrink-0 overflow-hidden rounded-2xl sm:ms-5 sm:block sm:h-full sm:w-40'>
         <Image
-          sizes='(max-width: 600px) 180px, 400px'
+          sizes='(max-width: 768px) 256px, 384px'
           className='aspect-square h-full w-full object-cover'
           fill
           src={project.coverImage}
